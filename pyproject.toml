@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tablecheck"
+version = "0.1.0"
+description = "Validate referential integrity across related CSV/TSV tables from a JSON schema. Standard library only."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Mohamadjavad Ershadmanesh" }]
+keywords = ["csv", "tsv", "data-validation", "referential-integrity", "foreign-key"]
+
+[project.scripts]
+tablecheck = "tablecheck.cli:main"
+
+[tool.setuptools]
+packages = ["tablecheck"]
